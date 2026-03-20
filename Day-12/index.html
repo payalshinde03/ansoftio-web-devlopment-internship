@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Cards</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+    }
+
+   
+    .container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 30%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      text-align: center;
+      font-size: 18px;
+    }
+
+ 
+    @media (max-width: 992px) {
+      .card {
+        width: 45%;
+        font-size: 16px;
+      }
+    }
+
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      .container {
+        flex-direction: column; 
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Responsive Card Layout</h1>
+
+  <div class="container">
+    <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempore, iure magnam reiciendis earum rerum dolorum dolores similique. Cum ipsum tempore consequatur, dignissimos iure sint veritatis quibusdam sunt quod delectus.</div>
+    <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempore, iure magnam reiciendis earum rerum dolorum dolores similique. Cum ipsum tempore consequatur, dignissimos iure sint veritatis quibusdam sunt quod delectus.</div>
+    <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempore, iure magnam reiciendis earum rerum dolorum dolores similique. Cum ipsum tempore consequatur, dignissimos iure sint veritatis quibusdam sunt quod delectus.</div>
+  </div>
+
+</body>
+</html>
